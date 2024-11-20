@@ -7,41 +7,48 @@
     <title>JavaScript Objects</title>
 </head>
 <body>
-    <h1>Book Display</h1>
-    <div class="display-book">
-        <button class="new-book">Add Book</button>
-    </div>
-    <dialog id="dialog">
-        <form method="dialog">
-            <p>
-                <label>
-                    Book Title:
-                    <input id="title" type="text" required />
-                </label>
-            </p>
-            <p>
-                <label>
-                    Author:
-                    <input id="author" type="text" required />
-                </label>
-            </p>
-            <p>
-                <label>
-                    Number of pages:
-                    <input id="pages" type="text" required />
-                </label>
-            </p>
-            <p>
-                <label>
-                    Has been read:
-                    <input id="read" type="text" required />
-                </label>
-            </p>
-            <div>
-                <button value="default" id="submit">Submit</button>
+    <div class="container">
+        <div class="left-display">
+            <button class="new-book">Add Book</button>
+        </div>
+        <div class="right-display">
+            <h1>Book Libray</h1>
+            <div class="display-book">
+            <!-- JavaScript handles the elements on this div-->
             </div>
-        </form>
-    </dialog>
+            <dialog id="dialog">
+                <form method="dialog">
+                    <p>
+                        <label>
+                            Book Title:
+                            <input id="title" type="text" required />
+                        </label>
+                    </p>
+                    <p>
+                        <label>
+                            Author:
+                            <input id="author" type="text" required />
+                        </label>
+                    </p>
+                    <p>
+                        <label>
+                            Number of pages:
+                            <input id="pages" type="text" required />
+                        </label>
+                    </p>
+                    <p>
+                        <label>
+                            Has been read:
+                            <input id="read" type="text" required />
+                        </label>
+                    </p>
+                    <div>
+                        <button value="default" id="submit">Submit</button>
+                    </div>
+                </form>
+            </dialog>
+        </div>
+    </div>
     <script src="script.js"></script>
 </body>
 </html>
