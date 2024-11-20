@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <title>JavaScript Objects</title>
+</head>
+<body>
+    <h1>Book Display</h1>
+    <div class="display-book">
+        <button class="new-book">Add Book</button>
+    </div>
+    <dialog id="dialog">
+        <form method="dialog">
+            <p>
+                <label>
+                    Book Title:
+                    <input id="title" type="text" required />
+                </label>
+            </p>
+            <p>
+                <label>
+                    Author:
+                    <input id="author" type="text" required />
+                </label>
+            </p>
+            <p>
+                <label>
+                    Number of pages:
+                    <input id="pages" type="text" required />
+                </label>
+            </p>
+            <p>
+                <label>
+                    Has been read:
+                    <input id="read" type="text" required />
+                </label>
+            </p>
+            <div>
+                <button value="default" id="submit">Submit</button>
+            </div>
+        </form>
+    </dialog>
+    <script src="script.js"></script>
+</body>
+</html>
