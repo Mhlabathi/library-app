@@ -11,19 +11,27 @@ const authorInput = dialog.querySelector('#author');
 const pagesInput = dialog.querySelector('#pages');
 const readInput = dialog.querySelector('#read');
 
-function Book(title, author, pages, read){
-    this.title = title;
-    this.author = author;
-    this.pages = pages;
-    this.read = read;
-    this.info = function(read){
-        if(!read){
-            return `${title} by ${author}, ${pages} pages, not read yet`;
-        }
-        else{
-            return `${title} by ${author}, ${pages} pages, has been read`;
+class Book{
+    constructor(title, author, pages, read){
+        this.title = title;
+        this.author = author;
+        this.pages = pages;
+        this.read = read;
+        this.info = function(){
+            if(this.read){
+                return `${title} by ${author}, ${pages} pages, has been read`;
+            }
+            else{
+                return `${title} by ${author}, ${pages} pages, not been read`;
+            }
         }
     }
+
+    get readInfo(){
+        return read === true ? `${title} by ${author}, ${pages} pages, has been read`: `${title} by ${author}, ${pages} pages, not been read`;
+    }
+
+
 }
 
 function createBookDOMObj( book, index ){
@@ -50,7 +58,6 @@ function updateDOMIndex(booksDOM){
         display.removeChild(display.lastElementChild);
     }
 
-    display.appendChild(newBook);
     displayBooks(booksDOM);
 }
 

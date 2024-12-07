@@ -1,2 +1,2 @@
 # library-app
-A small library app to demonstrate prototypal inheritance in JS
+A small library app using a class instance
