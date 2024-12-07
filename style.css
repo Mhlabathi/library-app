@@ -82,6 +82,11 @@ body {
 }
 
 /* Dailog Styles */
+dialog {
+    align-self: center;
+    justify-self: center;
+}
+
 form {
     max-width: 250px;
     display: flex;
